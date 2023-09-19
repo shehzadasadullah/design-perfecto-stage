@@ -169,7 +169,7 @@ const Payment = (e) => {
         discount_amount: percent,
         redirect_url:
           "https://webhook.site/40d847a6-6bfd-4946-b300-a381cd941e8d",
-        callback_url: `https://stage.designperfecto.com/payment/1?item=${item}&price=${price}`,
+        callback_url: `https://design-perfecto-stage.vercel.app/payment/1?item=${item}&price=${price}`,
         tags: [],
         platform: "custom",
         merchant_platform_id: "DESIGNP-" + OrderID,
@@ -242,7 +242,7 @@ const Payment = (e) => {
         discount_amount: percent,
         redirect_url:
           "https://webhook.site/40d847a6-6bfd-4946-b300-a381cd941e8d",
-        callback_url: `https://stage.designperfecto.com/payment/1?item=${item}&price=${price}`,
+        callback_url: `https://design-perfecto-stage.vercel.app/payment/1?item=${item}&price=${price}`,
         tags: [],
         platform: "custom",
         merchant_platform_id: "DESIGNP-" + OrderID,
