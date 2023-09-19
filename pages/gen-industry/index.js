@@ -25,7 +25,7 @@ import Education from "../../assets/img/c-industries/Education.png";
 import Event from "../../assets/img/c-industries/Event.png";
 import Landscaping from "../../assets/img/c-industries/Landscaping.png";
 import Jewellers from "../../assets/img/c-industries/Jewellers.png";
-import Travel from "../../assets/img/c-industries/Travel.png";
+import Travel from "../../assets/img/c-industries/travel.png";
 import Salon from "../../assets/img/c-industries/Salon.png";
 
 const industry = [
