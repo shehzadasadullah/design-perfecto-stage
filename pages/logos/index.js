@@ -63,7 +63,7 @@ const index = () => {
         };
 
         const response = await fetch(
-          "http://45.55.69.94:3000/logo",
+          "https://45.55.69.94:3000/logo",
           requestOptions
         );
 
