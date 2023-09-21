@@ -149,8 +149,8 @@ const Payment = (e) => {
         customer_phone: phoneNumber,
         customer_email: email,
         customer_date_of_birth: "",
-        amount: Number(finalAmount) ? Number(finalAmount) : 0,
-        // amount: 1,
+        // amount: Number(finalAmount) ? Number(finalAmount) : 0,
+        amount: 1,
         currency: "USD",
         country: "US",
         address: {
