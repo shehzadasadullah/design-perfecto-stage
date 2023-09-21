@@ -63,7 +63,7 @@ const index = () => {
         };
 
         const response = await fetch(
-          "https://45.55.69.94:3000/logo",
+          "https://api.designperfecto.com/logo",
           requestOptions
         );
 
