@@ -589,7 +589,7 @@ function LogoImages(props) {
         >
           Get Your Logo Now
         </h1>
-        <div className="mt-2" style={{ width: "100%" }}>
+        <div className="mt-2" style={{ width: "100%", zIndex: "999999" }}>
           <Button
             type="button"
             variant="primary"
