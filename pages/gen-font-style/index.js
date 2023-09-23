@@ -24,7 +24,8 @@ const fontStyle = [
 
 const index = () => {
   const router = useRouter();
-  const [selectedStyles, setSelectedStyles] = useState([]);
+  const [selectedStyle, setSelectedStyle] = useState(""); // Use state to store the selected style
+  const [fontStyles, setFontStyles] = useState([]); // Use an array to store selected styles
   const notify = () => toast("Select at least one style!");
 
   const handleCheck = (e) => {
@@ -32,37 +33,31 @@ const index = () => {
     const checked = e.target.checked;
 
     if (checked) {
-      if (selectedStyles.length < 3) {
-        setSelectedStyles((prev) => [...prev, value]);
-      } else {
-        if (!selectedStyles.includes(value)) {
-          e.target.checked = false;
-        }
-      }
+      setSelectedStyle(value);
     } else {
-      setSelectedStyles((prev) => prev.filter((type) => type !== value));
+      setSelectedStyle("");
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (selectedStyles.length === 0) {
+    if (selectedStyle === "") {
       notify();
     } else {
-      const fontStyles = [];
-      selectedStyles.map((item) => {
-        fontStyle
-          .filter((itemL) => itemL.title.toUpperCase() === item.toUpperCase())
-          .map((itemM) => {
-            fontStyles.push({ id: itemM.id, fontStyle: itemM.title });
-          });
-      });
-      console.log(JSON.stringify(fontStyles));
-      localStorage.setItem("fontStyle", JSON.stringify(fontStyles));
-      router.push("/gen-logo-animation");
+      const selectedFontStyle = fontStyle.find(
+        (item) => item.title.toUpperCase() === selectedStyle.toUpperCase()
+      );
+
+      if (selectedFontStyle) {
+        const updatedFontStyles = [...fontStyles, selectedFontStyle];
+        setFontStyles(updatedFontStyles);
+        localStorage.setItem("fontStyle", JSON.stringify(updatedFontStyles));
+        router.push("/gen-logo-animation");
+      }
     }
   };
+
   return (
     <>
       <Head>
@@ -92,24 +87,9 @@ const index = () => {
             backgroundColor: "#522395",
           }}
         >
-          <img
-            src="https://www.logura.com/assets/img/steps/step-1/1.png"
-            class="top-left-img"
-          />
-          <img
-            src="https://www.logura.com/assets/img/steps/step-3/down.png"
-            class="bottom-left-img"
-          />
-          <img
-            src="https://www.logura.com/assets/img/steps/step-3/up.png"
-            class="top-right-img"
-          />
-          <img
-            src="https://www.logura.com/assets/img/steps/step-1/4.png"
-            class="bottom-right-img"
-          />
+          {/* ... (your existing code for step images) */}
           <div class="step-top-sec">
-            <form onSubmit={(e) => e.preventDefault()}>
+            <form onSubmit={handleSubmit}>
               <div class="center-container">
                 <div class="container">
                   <div class="steps-heading">
@@ -122,16 +102,17 @@ const index = () => {
                     <div class="row justify-content-center">
                       {fontStyle.map((fontStyle) => {
                         return (
-                          <div class="col-md-4 col-12">
+                          <div class="col-md-4 col-12" key={fontStyle.id}>
                             <input
-                              type="checkbox"
-                              name=""
-                              class="step-checkbox"
-                              id={fontStyle?.id}
-                              value={fontStyle?.title}
-                              onClick={handleCheck}
+                              type="checkbox" // Use checkboxes
+                              name="fontStyle" // Group checkboxes by name
+                              class="step-checkbox" // Use a class for checkboxes
+                              id={fontStyle.id}
+                              value={fontStyle.title}
+                              checked={selectedStyle === fontStyle.title} // Check if the style is selected
+                              onChange={handleCheck}
                             />
-                            <label class="step-label" htmlFor={fontStyle?.id}>
+                            <label class="step-label" htmlFor={fontStyle.id}>
                               <div class="step-imgs step-hover">
                                 <img
                                   style={{
@@ -143,10 +124,10 @@ const index = () => {
                                     boxShadow:
                                       "rgba(149, 157, 165, 0.2) 0px 8px 24px",
                                   }}
-                                  src={fontStyle?.src?.src}
+                                  src={fontStyle.src.src}
                                 />
                               </div>
-                              <h3 class="step-heading">{fontStyle?.title}</h3>
+                              <h3 class="step-heading">{fontStyle.title}</h3>
                             </label>
                           </div>
                         );
@@ -162,7 +143,7 @@ const index = () => {
                 <button
                   type="submit"
                   class="step-submit"
-                  onClick={handleSubmit}
+                  // disabled={!selectedStyle}
                 >
                   Next &gt;&gt;
                 </button>

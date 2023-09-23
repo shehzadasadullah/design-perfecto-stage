@@ -132,7 +132,7 @@ const index = () => {
           <div class="step-top-sec">
             <form onSubmit={(e) => e.preventDefault()}>
               <div class="center-container">
-                <div class="container">
+                <div class="container mb-5">
                   <div class="steps-heading">
                     <h1 class="heading heading-h3 text-white">
                       Pick Your Industry

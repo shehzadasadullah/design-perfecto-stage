@@ -56,14 +56,14 @@ function LogoImages(props) {
             paddingTop: "70%", // Set the padding-top to maintain a 1:1 aspect ratio
             margin: "0 auto", // Center the div horizontally
           }}
-          className="text-center"
+          className="text-center mt-4"
         >
           <div
             style={{
               backgroundImage: `url(${bg1.src})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
+              backgroundPosition: "top",
               width: "100%",
               height: "100%",
               position: "absolute",
@@ -74,10 +74,10 @@ function LogoImages(props) {
             <div
               style={{
                 // border: "2px solid red",
-                marginLeft: "12%",
-                marginTop: "40%",
-                width: "23%", // Set a fixed width
-                height: "23%", // Set a fixed height
+                marginLeft: "11%",
+                marginTop: "11%",
+                width: "25%", // Set a fixed width
+                height: "34%", // Set a fixed height
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -103,6 +103,7 @@ function LogoImages(props) {
           height: "auto",
           // border: "2px solid",
           width: "100%",
+          marginTop: "-20%",
         }}
         className="row bg-white justify-content-center align-items-center"
       >
@@ -175,7 +176,7 @@ function LogoImages(props) {
           height: "auto",
           // border: "2px solid",
           width: "100%",
-          marginTop: "10%",
+          marginTop: "7%",
         }}
         className="row bg-white justify-content-center align-items-center"
       >
@@ -207,7 +208,7 @@ function LogoImages(props) {
               backgroundImage: `url(${bg3.src})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
+              backgroundPosition: "top",
               width: "100%",
               height: "100%",
               position: "absolute",
@@ -219,7 +220,7 @@ function LogoImages(props) {
               style={{
                 // border: "2px solid red",
                 marginLeft: "18%",
-                marginTop: "38%",
+                marginTop: "34%",
                 width: "38%", // Set a fixed width
                 height: "21%", // Set a fixed height
                 display: "flex",
@@ -272,7 +273,7 @@ function LogoImages(props) {
           height: "auto",
           width: "100%",
           // border: "2px solid",
-          marginTop: "10%",
+          marginTop: "6%",
         }}
         className="row bg-white justify-content-center align-items-center"
       >
@@ -295,14 +296,14 @@ function LogoImages(props) {
             paddingTop: "70%", // Set the padding-top to maintain a 1:1 aspect ratio
             margin: "0 auto", // Center the div horizontally
           }}
-          className="text-center"
+          className="text-center mt-5"
         >
           <div
             style={{
               backgroundImage: `url(${bg4.src})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
+              backgroundPosition: "top",
               width: "100%",
               height: "100%",
               position: "absolute",
@@ -314,7 +315,7 @@ function LogoImages(props) {
               style={{
                 // border: "2px solid red",
                 marginLeft: "28%",
-                marginTop: "34%",
+                marginTop: "7%",
                 width: "17%", // Set a fixed width
                 height: "23%", // Set a fixed height
                 display: "flex",
@@ -411,6 +412,7 @@ function LogoImages(props) {
           height: "auto",
           width: "100%",
           // border: "2px solid",
+          marginTop: "-28%",
         }}
         className="row bg-white justify-content-center align-items-center"
       >
@@ -440,7 +442,7 @@ function LogoImages(props) {
               backgroundImage: `url(${bg5.src})`,
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
+              backgroundPosition: "top",
               width: "100%",
               height: "100%",
               position: "absolute",
@@ -452,7 +454,7 @@ function LogoImages(props) {
               style={{
                 // border: "2px solid red",
                 marginLeft: "13%",
-                marginTop: "45%",
+                marginTop: "35%",
                 width: "32%", // Set a fixed width
                 height: "20%", // Set a fixed height
                 display: "flex",
@@ -573,6 +575,7 @@ function LogoImages(props) {
           alignItems: "center",
           width: "100%",
           height: "auto",
+          marginTop: "-10%",
         }}
       >
         <h4 style={{ color: "#FC6078", fontFamily: "Gazpacho" }}>

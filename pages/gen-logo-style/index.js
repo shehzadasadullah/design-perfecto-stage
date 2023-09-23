@@ -9,11 +9,11 @@ import "react-toastify/dist/ReactToastify.css";
 import Head from "next/head";
 
 import Image1 from "../../assets/img/logo-style/1_1.png";
-import Image2 from "../../assets/img/logo-style/2_1.png";
+// import Image2 from "../../assets/img/logo-style/2_1.png";
 import Image6 from "../../assets/img/logo-style/6_1.png";
 
 const logoStyle = [
-  { src: Image2, title: "Icon Based", id: 1 },
+  // { src: Image2, title: "Icon Based", id: 1 },
   { src: Image6, title: "Name Based", id: 2 },
   { src: Image1, title: "Initial Based", id: 3 },
 ];
@@ -118,7 +118,7 @@ const index = () => {
                     <div class="row justify-content-center">
                       {logoStyle.map((logoStyle) => {
                         return (
-                          <div class="col-md-4 col-12">
+                          <div class="col-md-6 col-12">
                             <input
                               type="checkbox"
                               name=""

@@ -11,7 +11,7 @@ const HeroSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(setBusinessName(name));
-    Router.push(`/generate-logo?businessName=${name}`);
+    Router.push(`/generate-logo?businessName=${encodeURIComponent(name)}`);
   };
   return (
     <div
