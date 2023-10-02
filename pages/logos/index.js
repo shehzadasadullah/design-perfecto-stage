@@ -33,18 +33,18 @@ const index = () => {
         const cName = localStorage.getItem("companyName");
         const cSlogan = localStorage.getItem("companySlogan");
         const cIndustry = localStorage.getItem("industryData");
-        const logoType = localStorage.getItem("logoType");
+        // const logoType = localStorage.getItem("logoType");
         const fontStyle = localStorage.getItem("fontStyle");
         const industryParse = JSON.parse(cIndustry);
-        const logoTypeParse = JSON.parse(logoType);
+        // const logoTypeParse = JSON.parse(logoType);
         const fontStyleParse = JSON.parse(fontStyle);
-        const array1 = [];
+        // const array1 = [];
         const array2 = [];
         const industryID = industryParse[0].id;
 
-        logoTypeParse.map((item) => {
-          array1.push(item.id);
-        });
+        // logoTypeParse.map((item) => {
+        //   array1.push(item.id);
+        // });
         fontStyleParse.map((item) => {
           array2.push(item.id);
         });
