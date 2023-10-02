@@ -8,7 +8,6 @@ import Head from "next/head";
 import Restaurants from "../../assets/img/c-industries/Restaurants.png";
 import Fitness from "../../assets/img/c-industries/Fitness.png";
 import Transport from "../../assets/img/c-industries/Transport.png";
-import Detailing from "../../assets/img/c-industries/Detailing.png";
 import Dental from "../../assets/img/c-industries/Dental.png";
 import Games from "../../assets/img/c-industries/Games.png";
 import Photography from "../../assets/img/c-industries/Photography.png";
@@ -32,7 +31,6 @@ const industry = [
   { src: Restaurants, title: "Restaurants", id: 1 },
   { src: Fitness, title: "Fitness", id: 2 },
   { src: Transport, title: "Transport", id: 3 },
-  { src: Detailing, title: "Detailing", id: 4 },
   { src: Dental, title: "Dental", id: 5 },
   { src: Games, title: "Games", id: 6 },
   { src: Photography, title: "Photography", id: 7 },
@@ -73,7 +71,7 @@ const index = () => {
         });
       console.log(JSON.stringify(industryData));
       localStorage.setItem("industryData", JSON.stringify(industryData));
-      router.push("/gen-logo-style");
+      router.push("/gen-font-style");
     }
   };
 
@@ -117,14 +115,14 @@ const index = () => {
             src="https://www.logura.com/assets/img/steps/step-1/1.png"
             class="top-left-img"
           />
-          <img
+          {/* <img
             src="https://www.logura.com/assets/img/steps/step-2/down.png"
             class="bottom-left-img"
-          />
-          <img
+          /> */}
+          {/* <img
             src="https://www.logura.com/assets/img/steps/step-2/up.png"
             class="top-right-img"
-          />
+          /> */}
           <img
             src="https://www.logura.com/assets/img/steps/step-1/4.png"
             class="bottom-right-img"

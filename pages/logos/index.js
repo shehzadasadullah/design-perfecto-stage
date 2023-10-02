@@ -53,7 +53,7 @@ const index = () => {
         formData.append("company_name", cName.toString());
         formData.append("company_slogan", cSlogan.toString());
         formData.append("industry_id", industryID);
-        formData.append("logo_ids", array1);
+        formData.append("logo_ids", [2]);
         formData.append("font_ids", array2);
 
         const requestOptions = {
@@ -129,7 +129,7 @@ const index = () => {
     if (imageSrcs.length > 0) {
       setTimeout(() => {
         handleShow();
-      }, 5000);
+      }, 20000);
     }
   }, [imageSrcs]);
 

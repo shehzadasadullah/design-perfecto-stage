@@ -187,9 +187,17 @@ const index = () => {
                                     <a
                                       data-detail="USD-100-Item Name-Category"
                                       class="theme-btn pay-now-btn"
-                                      onClick={(e) =>
-                                        handler(e, "9.99", "Tailor Made Logo")
-                                      }
+                                      onClick={(e) => {
+                                        if (
+                                          !localStorage.getItem("downloadLogo")
+                                        ) {
+                                          localStorage.setItem(
+                                            "downloadLogo",
+                                            "true"
+                                          );
+                                        }
+                                        handler(e, "9.99", "Tailor Made Logo");
+                                      }}
                                     >
                                       Pay Now
                                     </a>{" "}
