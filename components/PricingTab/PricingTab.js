@@ -109,7 +109,7 @@ const PricingTab = () => {
                           <div class="col-md-3 plr-7">
                             <div class="single-pricing">
                               <div class="price-header">
-                                <h2>$49</h2>
+                                <h2>$9.49</h2>
                                 <h1>Basic</h1>{" "}
                                 <img
                                   src={Tab1.src}
@@ -140,7 +140,7 @@ const PricingTab = () => {
                                 <a
                                   data-detail="USD-100-Item Name-Category"
                                   class="theme-btn pay-now-btn"
-                                  onClick={(e) => handler(e, "49", "Basic")}
+                                  onClick={(e) => handler(e, "9.49", "Basic")}
                                 >
                                   Order Now
                                 </a>{" "}
@@ -150,7 +150,7 @@ const PricingTab = () => {
                           <div class="col-md-3 plr-7">
                             <div class="single-pricing">
                               <div class="price-header">
-                                <h2>$99</h2>
+                                <h2>$14.49</h2>
                                 <h1>Standard</h1>{" "}
                                 <img
                                   src={Tab2.src}
@@ -181,7 +181,9 @@ const PricingTab = () => {
                               <div class="price-link">
                                 {" "}
                                 <a
-                                  onClick={(e) => handler(e, "99", "Standard")}
+                                  onClick={(e) =>
+                                    handler(e, "14.49", "Standard")
+                                  }
                                   data-detail="USD-100-Item Name-Category"
                                   class="theme-btn pay-now-btn"
                                 >
@@ -193,7 +195,7 @@ const PricingTab = () => {
                           <div class="col-md-3 plr-7">
                             <div class="single-pricing">
                               <div class="price-header">
-                                <h2>$149</h2>
+                                <h2>$19.49</h2>
                                 <h1>Prime</h1>{" "}
                                 <img
                                   src={Tab3.src}
@@ -223,7 +225,7 @@ const PricingTab = () => {
                               <div class="price-link">
                                 {" "}
                                 <a
-                                  onClick={(e) => handler(e, "149", "Prime")}
+                                  onClick={(e) => handler(e, "19.49", "Prime")}
                                   data-detail="USD-100-Item Name-Category"
                                   class="theme-btn pay-now-btn"
                                 >
@@ -235,7 +237,7 @@ const PricingTab = () => {
                           <div class="col-md-3 plr-7">
                             <div class="single-pricing">
                               <div class="price-header">
-                                <h2>$199</h2>
+                                <h2>$24.49</h2>
                                 <h1>Deluxe</h1>{" "}
                                 <img
                                   src={Tab4.src}
@@ -265,7 +267,7 @@ const PricingTab = () => {
                               <div class="price-link">
                                 {" "}
                                 <a
-                                  onClick={(e) => handler(e, "199", "Deluxe")}
+                                  onClick={(e) => handler(e, "24.49", "Deluxe")}
                                   data-detail="USD-100-Item Name-Category"
                                   class="theme-btn pay-now-btn"
                                 >

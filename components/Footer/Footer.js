@@ -72,7 +72,7 @@ const Footer = () => {
                   <a
                     onClick={(e) => {
                       e.preventDefault();
-                      router.push("/privacy");
+                      router.push("/privacy-policy");
                     }}
                   >
                     Privacy Policy
@@ -82,7 +82,7 @@ const Footer = () => {
                   <a
                     onClick={(e) => {
                       e.preventDefault();
-                      router.push("/privacy");
+                      router.push("/privacy-policy");
                     }}
                   >
                     Terms And Conditions

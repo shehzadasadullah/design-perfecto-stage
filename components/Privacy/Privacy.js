@@ -44,14 +44,14 @@ const privacy = () => {
                         class="heading heading-h3 text-white font-120"
                         style={{ marginTop: "80px" }}
                       >
-                        Terms & Conditions
+                        Privacy Policy
                       </h1>
                       <div class="bkseparator--15"></div>
                       <h6 class="heading heading-h6 text-white letter-spacing-1">
                         It is entirely your option whether or not to visit our
                         Homepage. Any privacy issue is governed by this notice
-                        and our Terms and Conditions of Use. This includes
-                        damage restrictions and dispute resolution
+                        and our Privacy Policy of Use. This includes damage
+                        restrictions and dispute resolution
                       </h6>
                     </div>
                   </div>
@@ -67,223 +67,282 @@ const privacy = () => {
                 <div class="row">
                   <div class="col-lg-12">
                     <div class="about-content text-center">
-                      <h2 class="heading-title text-white">
-                        TERMS & CONDITIONS
-                      </h2>
+                      <h2 class="heading-title text-white">Privacy Policy</h2>
                       <h1 class="heading heading-h3 text-white">
-                        TERMS & CONDITIONS
+                        Privacy Policy
                       </h1>
                       <h4 class="heading heading-h6 text-white letter-spacing-1">
                         Use of Site Contents
                       </h4>
                     </div>
                     <p class="text-white">
-                      It is entirely up to you whether or not to visit our
-                      Homepage. Any privacy issue is governed by this notice and
-                      our Terms of Service. This covers damage restrictions,
-                      dispute arbitration, and the appropriate state
-                      legislation. If the customer has any questions or concerns
-                      about the Privacy Policy, they should contact us as soon
-                      as possible. Our customer care representatives would be
-                      delighted to assist the clients. Because our policies are
-                      subject to change at any moment, it is advised that the
-                      customer read the policy each time they visit the site to
-                      make a purchase.
+                      At Design Perfecto, accessible at{" "}
+                      <span className="fw-bold">www.designperfecto.com</span>,
+                      one of our main priorities is the privacy of our visitors.
+                      This Privacy Policy document contains types of information
+                      that is collected and recorded by Design Perfecto and how
+                      we use it.
+                      <br />
+                      If you have additional questions or require more
+                      information about our Privacy Policy, do not hesitate to
+                      contact us through email at{" "}
+                      <a
+                        style={{ color: "white" }}
+                        href="mailto:Info@designperfecto.com"
+                      >
+                        Info@designperfecto.com
+                      </a>
+                      <br />
+                      This privacy policy applies only to our online activities
+                      and is valid for visitors to our website with regards to
+                      the information that they shared and/or collect in Design
+                      Perfecto. This policy is not applicable to any information
+                      collected offline or via channels other than this website.
                     </p>
+
+                    <h3 class="heading text-white letter-spacing-1">Consent</h3>
                     <p class="text-white">
-                      The firm collects navigational information about where
-                      visitors go on our website and technical information about
-                      the efficiency of our website and service (i.e., time to
-                      connect and time to download pages). This information
-                      allows us to discover which portions of our Company's
-                      Website are the most popular and assists us in better
-                      understanding our clientele. This also helps us in
-                      improving the quality of those sites that are weak in some
-                      aspects. Unless otherwise specified, all items on this
-                      site (including pictures, drawings, designs, icons,
-                      photos, textual, and other materials) are copyrights,
-                      trademarks, trade dress, and/or other intellectual
-                      property owned, controlled, or licensed by the company.
-                      This Site and its Content are strictly for personal,
-                      non-commercial use.{" "}
+                      By using our website, you hereby consent to our Privacy
+                      Policy and agree to its terms.
                     </p>
-                    <p class="text-white">
-                      The client may download or copy the Site's Contents and
-                      any downloadable items for personal use only. As a
-                      consequence of any such downloading or copying, no right,
-                      title, or interest in any such materials or software is
-                      transferred to the client. The client may not duplicate,
-                      publish, transmit, distribute, display, alter, create
-                      derivatives, sell, or participate in the sale or
-                      exploitation of the site, its content, or any related
-                      software (save as mentioned above).
-                    </p>
-                    <h3 class="heading text-white letter-spacing-1">
-                      Testimonials
-                    </h3>
-                    <p class="text-white">
-                      All comments, feedback, postcards, suggestions, ideas, and
-                      other submissions disclosed, submitted, or offered to Our
-                      Company on or through this site or otherwise disclosed,
-                      submitted, or offered in connection with your use of this
-                      site (collectively, the "Comments") shall be the property
-                      of Our Company. The company will possess exclusive rights,
-                      titles, and interests in the Comments and will not be
-                      restricted in any way in its commercial or otherwise use
-                      of the Comments. The company is not and will not be
-                      obligated to:
-                    </p>
-                    <ul class="text-white">
-                      <li>To keep any comments confidential</li>
-                      <li>to compensate the user for any Comments or</li>
-                      <li>To react to any comments made by users.</li>
-                    </ul>
-                    <p class="text-white">
-                      The corporation may also use client testimonials and logos
-                      on its various digital and offline domains.
-                    </p>
+
                     <h3 class="heading heading-h6 text-white letter-spacing-1">
-                      Copyright/Trademarks
+                      Information we collect
                     </h3>
                     <p class="text-white">
-                      The brand names used on our sites are the property of
-                      their respective companies or subsidiaries. They may not
-                      be used in connection with any product or service not
-                      provided by that business.
+                      The personal information that you are asked to provide,
+                      and the reasons why you are asked to provide it, will be
+                      made clear to you at the point we ask you to provide your
+                      personal information.
+                      <br />
+                      If you contact us directly, we may receive additional
+                      information about you such as your name, email address,
+                      phone number, the contents of the message and/or
+                      attachments you may send us, and any other information you
+                      may choose to provide.
+                      <br />
+                      When you register for an Account, we may ask for your
+                      contact information, including items such as name, company
+                      name, address, email address, and telephone number.
                     </p>
-                    <p class="text-white">
-                      Text, graphics, logos, button icons, pictures, digital
-                      downloads, data compilations, and software are all the
-                      property of this firm or its content providers and are
-                      protected by Australian and international copyright laws.
-                      All material on this site is the sole property of this
-                      firm and is protected by Australian and international
-                      copyright laws. This site's software is the property of
-                      this firm or its software providers and is protected by
-                      Australian and international copyright laws.
-                    </p>
+
                     <h3 class="heading text-white letter-spacing-1">
-                      Communication via electronic means
+                      How we use your information
                     </h3>
                     <p class="text-white">
-                      The client connects with our organization electronically
-                      the minute he or she sees our website or sends emails to
-                      our contacts. The customer is required to receive our
-                      messages online. Our company shall communicate with the
-                      customer via email or announcements on this website. As a
-                      result, the client accepts that all agreements,
-                      notifications, disclosures, and pertinent communication
-                      comply, complete all legal obligations, and are comparable
-                      to any written legal declaration.
+                      We use the information we collect in various ways,
+                      including to:
+                      <ul class="text-white">
+                        <li>Provide, operate, and maintain our website</li>
+                        <li>Improve, personalize, and expand our website</li>
+                        <li>Understand and analyze how you use our website</li>
+                        <li>
+                          Develop new products, services, features, and
+                          functionality
+                        </li>
+                        <li>
+                          Communicate with you, either directly or through one
+                          of our partners, including for customer service, to
+                          provide you with updates and other information
+                          relating to the website, and for marketing and
+                          promotional purposes
+                        </li>
+                        <li>Send you emails</li>
+                        <li>Find and prevent fraud</li>
+                        <li>Log Files</li>
+                      </ul>
+                      Design Perfecto follows a standard procedure of using log
+                      files. These files log visitors when they visit websites.
+                      All hosting companies do this and a part of hosting
+                      services' analytics. The information collected by log
+                      files include internet protocol (IP) addresses, browser
+                      type, Internet Service Provider (ISP), date and time
+                      stamp, referring/exit pages, and possibly the number of
+                      clicks. These are not linked to any information that is
+                      personally identifiable. The purpose of the information is
+                      for analyzing trends, administering the site, tracking
+                      users' movement on the website, and gathering demographic
+                      information.
                     </p>
+
                     <h3 class="heading  text-white letter-spacing-1">
-                      Your Profile
+                      Cookies and Web Beacons
                     </h3>
                     <p class="text-white">
-                      The user is entirely responsible for maintaining the
-                      security of their account and password and controlling
-                      access to their computer. The client agrees to assume
-                      responsibility for any actions under your account or
-                      password.
+                      Like any other website, Design Perfecto uses ‘cookies'.
+                      These cookies are used to store information including
+                      visitors' preferences, and the pages on the website that
+                      the visitor accessed or visited. The information is used
+                      to optimize the users' experience by customizing our web
+                      page content based on visitors' browser type and/or other
+                      information.
                     </p>
+
                     <h3 class="heading heading-h6 text-white letter-spacing-1">
-                      Copyright Disputes
+                      DoubleClick DART Cookie
                     </h3>
                     <p class="text-white">
-                      The company and its subsidiaries honor other people's
-                      intellectual property. Please adhere to our Notice and
-                      Procedure for Making Claims of Copyright Violation if
-                      someone visiting the website suspects their work has been
-                      reproduced in a way that violates their copyright.
+                      Google is one of a third-party vendor on our site. It also
+                      uses cookies, known as DART cookies, to serve ads to our
+                      site visitors based upon their visit to
+                      www.designperfecto.com and other sites on the internet.
+                      However, visitors may choose to decline the use of DART
+                      cookies by visiting the Google ad and content network
+                      Privacy Policy at the following URL –
+                      https://policies.google.com/technologies/ads.
+                      <br />
+                      Some of advertisers on our site may use cookies and web
+                      beacons. Our advertising partners are listed below. Each
+                      of our advertising partners has their own Privacy Policy
+                      for their policies on user data. For easier access, we
+                      hyperlinked to their Privacy Policies below.
                     </p>
+
                     <h3 class="heading heading-h6 text-white letter-spacing-1">
-                      Policy on Refunds
+                      Google
                     </h3>
                     <p class="text-white">
-                      Design Perfecto.com guarantees 100% client satisfaction
-                      with our unlimited free revision policy, which allows you
-                      to improve on your first design brief for free via your
-                      account area. In the event of a duplicate charge due to a
-                      processing error, failure to meet your unique designing
-                      criteria, or failure to finish your design order per the
-                      delivery policy, your whole design order price will be
-                      returned.
+                      <a
+                        style={{ color: "white" }}
+                        href="https://policies.google.com/technologies/ads"
+                      >
+                        https://policies.google.com/technologies/ads
+                      </a>
                     </p>
+
+                    <h3 class="heading heading-h6 text-white letter-spacing-1">
+                      Advertising Partners Privacy Policies
+                    </h3>
                     <p class="text-white">
-                      If you are dissatisfied with any of the design services
-                      given by Design Perfecto, you may seek a refund within
-                      five days after completing your original design. If a
-                      refund request is not received within five days of the
-                      delivery of your original drawings, it will be considered
-                      by both parties that you are pleased with them. The return
-                      policy for any Special / Combo packages will be the same
-                      as for single items.
-                    </p>
-                    <p class="text-white">
-                      All refund claims will be handled in the following manner:
-                    </p>
-                    <p class="text-white">
-                      ⦁ If you seek a refund prior to the initial idea delivery,
-                      you will be eligible for a full refund (minus a 10%
-                      service and processing charge).
+                      You may consult this list to find the Privacy Policy for
+                      each of the advertising partners of Design Perfecto.
                       <br />
-                      ⦁ If you request a refund within 48 hours, you will be
-                      eligible for a 66% refund (minus a 10% service and
-                      processing charge).
+                      Third-party ad servers or ad networks uses technologies
+                      like cookies, JavaScript, or Web Beacons that are used in
+                      their respective advertisements and links that appear on
+                      Design Perfecto, which are sent directly to users'
+                      browser. They automatically receive your IP address when
+                      this occurs. These technologies are used to measure the
+                      effectiveness of their advertising campaigns and/or to
+                      personalize the advertising content that you see on
+                      websites that you visit.
                       <br />
-                      ⦁ If you seek a refund within 48-120 hours of the original
-                      design delivery, you will be entitled to a 33% refund
-                      (minus a 10% service and processing charge).
+                      Note that Design Perfecto has no access to or control over
+                      these cookies that are used by third-party advertisers.
+                    </p>
+
+                    <h3 class="heading heading-h6 text-white letter-spacing-1">
+                      Third-Party Privacy Policies
+                    </h3>
+                    <p class="text-white">
+                      Design Perfecto's Privacy Policy does not apply to other
+                      advertisers or websites. Thus, we are advising you to
+                      consult the respective Privacy Policies of these
+                      third-party ad servers for more detailed information. It
+                      may include their practices and instructions about how to
+                      opt-out of certain options. You may find a complete list
+                      of these Privacy Policies and their links here: Privacy
+                      Policy Links.
                       <br />
-                      ⦁ After 120 hours of your original design delivery, no
-                      refund requests will be granted; however, because we
-                      believe in 100% customer satisfaction, you are urged to
-                      contact us if you have any concerns.
-                      <br />⦁ Please be warned that if there is no reaction,
-                      comment, or contact from the client/customer for 14 days
-                      (except for any emergency, demise, or intimation), the
-                      linked project will be discarded, and the data will be
-                      kept in the archive folder. To restart the procedure, the
-                      client/customer must pay a re-registration fee of $300.
+                      You can choose to disable cookies through your individual
+                      browser options. To know more detailed information about
+                      cookie management with specific web browsers, it can be
+                      found at the browsers' respective websites. What Are
+                      Cookies?
                     </p>
+
+                    <h3 class="heading heading-h6 text-white letter-spacing-1">
+                      CCPA Privacy Policy (Do Not Sell My Personal Information)
+                    </h3>
                     <p class="text-white">
-                      All refund claims should be directed to the support
-                      department. Designperfecto.com has the right to reject or
-                      deny your request based on the breach of your user
-                      agreement on an individual case-by-case basis. How to Get
-                      Your Refund
+                      Under the CCPA, among other rights, California consumers
+                      have the right to:
+                      <ul class="text-white">
+                        <li>
+                          Request that a business that collects a consumer's
+                          personal data disclose the categories and specific
+                          pieces of personal data that a business has collected
+                          about consumers.
+                        </li>
+                        <li>
+                          Request that a business delete any personal data about
+                          the consumer that a business has collected.
+                        </li>
+                        <li>
+                          Request that a business that sells a consumer's
+                          personal data, not sell the consumer's personal data.
+                        </li>
+                        <li>
+                          If you make a request, we have one month to respond to
+                          you. If you would like to exercise any of these
+                          rights, please contact us.
+                        </li>
+                      </ul>
                     </p>
+
+                    <h3 class="heading heading-h6 text-white letter-spacing-1">
+                      GDPR Privacy Policy (Data Protection Rights)
+                    </h3>
                     <p class="text-white">
-                      Please ensure that you satisfy the following conditions to
-                      ensure that your refund request is approved:
+                      We would like to make sure you are fully aware of all of
+                      your data protection rights. Every user is entitled to the
+                      following:
+                      <ul class="text-white">
+                        <li>
+                          The right to access – You have the right to request
+                          copies of your personal data. We may charge you a
+                          small fee for this service.
+                        </li>
+                        <li>
+                          The right to rectification – You have the right to
+                          request that we correct any information you believe is
+                          inaccurate. You also have the right to request that we
+                          complete the information you believe is incomplete.
+                        </li>
+                        <li>
+                          The right to erasure – You have the right to request
+                          that we erase your personal data, under certain
+                          conditions.
+                        </li>
+                        <li>
+                          The right to restrict processing – You have the right
+                          to request that we restrict the processing of your
+                          personal data, under certain conditions.
+                        </li>
+                        <li>
+                          The right to object to processing – You have the right
+                          to object to our processing of your personal data,
+                          under certain conditions.
+                        </li>
+                        <li>
+                          The right to data portability – You have the right to
+                          request that we transfer the data that we have
+                          collected to another organization, or directly to you,
+                          under certain conditions.
+                        </li>
+                        <li>
+                          If you make a request, we have one month to respond to
+                          you. If you would like to exercise any of these
+                          rights, please contact us.
+                        </li>
+                      </ul>
                     </p>
+
+                    <h3 class="heading heading-h6 text-white letter-spacing-1">
+                      Children's Information
+                    </h3>
                     <p class="text-white">
-                      Claim your refund by contacting us using one of the two
-                      methods listed below: Now dial 307-225-2715.
-                    </p>
-                    <p class="text-white">
-                      We will endeavor to address your issue quickly through our
-                      revision procedure or email you a refund request approval
-                      from our refund department.
-                    </p>
-                    <p class="text-white">
-                      Design Perfecto would get your design rights following the
-                      refund, and you would be unable to exhibit any version of
-                      the design given by the firm. Let us also be clear:
-                    </p>
-                    <p class="text-white">
-                      You accept that because the design rights have now been
-                      transferred to the firm, you will have no right (direct or
-                      indirect) to utilize any answer or other material, work
-                      product, or media, nor will you have any ownership
-                      interest in or to the same.
-                    </p>
-                    <p class="text-white">
-                      Please get in touch with us by clicking here if you have
-                      any questions or issues regarding our refund policy.
-                    </p>
-                    <p class="text-white">
-                      <a>To begin a chat, click Live chat</a>
+                      Another part of our priority is adding protection for
+                      children while using the internet. We encourage parents
+                      and guardians to observe, participate in, and/or monitor
+                      and guide their online activity.
+                      <br />
+                      Design Perfecto does not knowingly collect any Personal
+                      Identifiable Information from children under the age of
+                      13. If you think that your child provided this kind of
+                      information on our website, we strongly encourage you to
+                      contact us immediately and we will do our best efforts to
+                      promptly remove such information from our records.
                     </p>
                   </div>
                 </div>
