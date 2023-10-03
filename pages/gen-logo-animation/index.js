@@ -5,40 +5,15 @@ import { useRouter } from "next/router";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Head from "next/head";
-
-// import gif1 from "./animations/a1.gif";
-// import gif2 from "./animations/a2.gif";
-// import gif3 from "./animations/a3.gif";
-import gif4 from "./animations/a4.gif";
-// const gifs = [gif1.src, gif2.src, gif3.src, gif4.src];
-const gifs = [gif4.src, gif4.src, gif4.src];
+import GIF from "../../assets/img/animation-gif.gif";
 
 const index = () => {
   const router = useRouter();
-  const [currentGifIndex, setCurrentGifIndex] = useState(0);
-  const [count, setCount] = useState(0);
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (count < 100) {
-        setCount(count + 1);
-      }
-    }, 100); // Increment every 1000ms (1 second)
-
-    return () => clearInterval(interval); // Cleanup the interval on unmount
-  }, [count]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentGifIndex((prevIndex) => (prevIndex + 1) % gifs.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
+    setTimeout(() => {
+      router.push("/logos");
+    }, 12200);
   }, []);
-
-  useEffect(() => {
-    if (count === 100) router.push("/logos");
-  }, [count]);
 
   return (
     <>
@@ -66,7 +41,7 @@ const index = () => {
             width: "100%",
             height: "100vh",
             position: "relative",
-            backgroundColor: "#522395",
+            backgroundColor: "#000",
           }}
         >
           <img
@@ -86,59 +61,12 @@ const index = () => {
             class="bottom-right-img"
           />
           <div class="step-top-sec">
-            <div className="container">
-              <div className="row justify-content-center align-items-center">
-                <div className="col-12 text-center">
-                  {gifs.map((gif, index) => (
-                    <>
-                      <div
-                        style={{
-                          display: "flex",
-                          color: "white",
-                          flexDirection: "column",
-                          justifyContent: "center",
-                          justifyItems: "center",
-                          opacity: index === currentGifIndex ? 1 : 0,
-                          transition: "opacity 1s ease-in-out",
-                          maxWidth: "100%",
-                          maxHeight: "100%",
-                          position: "absolute",
-                          top: "25%",
-                          left: "50%",
-                          transform: "translate(-50%, -50%)",
-                        }}
-                      >
-                        <img
-                          style={{ height: "200pt" }}
-                          key={index}
-                          src={gif}
-                          alt="xad"
-                        />
-
-                        <h4 className="heading heading-h5 text-white">
-                          {index === 0 ? (
-                            <span style={{ color: "#FEA300" }}>
-                              Designing your perfect Logo!
-                            </span>
-                          ) : index === 1 ? (
-                            <span style={{ color: "#FEA300" }}>
-                              Creating Your Business Cards!
-                            </span>
-                          ) : index === 2 ? (
-                            <span style={{ color: "#FEA300" }}>
-                              Planning Your Social Posts!
-                            </span>
-                          ) : (
-                            ""
-                          )}
-                        </h4>
-                        <h1 className="heading heading-h1 mt-5 text-white font-120 textgrad">
-                          {count}%
-                        </h1>
-                      </div>
-                    </>
-                  ))}
-                </div>
+            <div
+              style={{ height: "auto", width: "100%", overflow: "hidden" }}
+              className="row justify-content-center align-items-center"
+            >
+              <div className="col-12 text-center">
+                <img src={GIF.src} alt="GIF" style={{ height: "450pt" }} />
               </div>
             </div>
           </div>

@@ -18,8 +18,12 @@ import { Envelope, Telephone, GeoAlt } from "react-bootstrap-icons";
 
 const Footer = () => {
   const router = useRouter();
+  const disableContextMenu = (event) => {
+    event.preventDefault();
+  };
   return (
     <div
+      onContextMenu={disableContextMenu}
       class="brook-footer-area rslide"
       style={{ backgroundColor: "#fea300" }}
     >

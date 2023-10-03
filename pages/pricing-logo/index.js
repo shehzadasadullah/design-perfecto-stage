@@ -135,19 +135,7 @@ const index = () => {
                               id="logo-tab-link"
                             >
                               {" "}
-                              Logo Pricing{" "}
-                            </a>{" "}
-                          </li>
-                          <li class="nav-item">
-                            {" "}
-                            <a
-                              class="nav-link"
-                              data-bs-toggle="tab"
-                              href="#logo-branding-tab"
-                              id="logo-branding-tab-link"
-                            >
-                              {" "}
-                              Website Development + Professional Logos
+                              Pricing{" "}
                             </a>{" "}
                           </li>
                         </ul>
@@ -157,12 +145,12 @@ const index = () => {
                             class="tab-pane animated fadeIn active"
                           >
                             <br />
-                            <div class="row justify-content-center align-items-center mlr--7">
-                              <div class="col-md-4 plr-7">
+                            <div class="row justify-content-center gap-4 align-items-center mlr--7">
+                              <div class="col-xl-5 plr-7">
                                 <div class="single-pricing">
                                   <div class="price-header">
-                                    <h2>$9.99</h2>
-                                    <h1>Tailor Made Logo</h1>{" "}
+                                    <h2>$9</h2>
+                                    <h1>Ready Made Logo</h1>{" "}
                                     <img
                                       src={Tab1.src}
                                       loading="lazy"
@@ -180,6 +168,8 @@ const index = () => {
                                       <li>1 Finalized Logo</li>
                                       <li>100% Ownership</li>
                                       <li>No Print Ready .PNG File</li>
+                                      <li>No Vector .EPS File</li>
+                                      <li>No Editable Vector .AI File</li>
                                     </ul>
                                   </div>
                                   <div class="price-link">
@@ -196,7 +186,7 @@ const index = () => {
                                             "true"
                                           );
                                         }
-                                        handler(e, "9.99", "Tailor Made Logo");
+                                        handler(e, "9", "Ready Made Logo");
                                       }}
                                     >
                                       Pay Now
@@ -204,42 +194,40 @@ const index = () => {
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                          </div>
-                          <div
-                            id="logo-branding-tab"
-                            class="tab-pane animated fadeIn"
-                          >
-                            <br />
-                            <div class="row justify-content-center align-items-center mlr--7">
-                              <div class="col-md-4 plr-7">
+                              <div class="col-xl-5 plr-7">
                                 <div class="single-pricing">
                                   <div class="price-header">
-                                    <h2>$148</h2>
-                                    <h1>Basic 2 In 1</h1> <img src={Tab1.src} />
+                                    <h2>$399</h2>
+                                    <h1>
+                                      Custom Website With Professional Logo
+                                    </h1>{" "}
+                                    <img
+                                      src={Tab1.src}
+                                      loading="lazy"
+                                      alt="Pricing icon"
+                                    />
                                   </div>
-                                  <div class="price-detail">
-                                    <h5>Basic Logo</h5>
+                                  <div
+                                    style={{
+                                      height: "auto",
+                                    }}
+                                    class="price-detail"
+                                  >
+                                    <h5>What you will Get?</h5>
                                     <ul>
-                                      <li>2 Logo Design Concepts</li>
-                                      <li>By 1 Experienced Designer</li>
-                                      <li>4 Free Revisions</li>
-                                      <li>Dedicated Project Manager</li>
-                                      <li>24 - 48 Hours Delivery</li>
-                                    </ul>
-                                    <h5>Starter Branding</h5>
-                                    <ul>
-                                      <li>Business Card Design</li>
-                                      <li>Letter head Design</li>
-                                      <li>Envelope Design</li>
-                                      <li>MS Word Letterhead</li>
-                                      <li>Email Signature Design</li>
-                                      <li>Invoice Design</li>
-                                      <li>Facebook Banner Design</li>
-                                      <li>Youtube Banner Design</li>
-                                      <li>Twitter Banner Design</li>
-                                      <li>Linkedin Banner Design</li>
-                                      <li>Logo Watermark</li>
+                                      <li>
+                                        5 Pages Static Website with web page
+                                        banners
+                                      </li>
+                                      <li>
+                                        Company Profile Page & Product/Service
+                                        Page
+                                      </li>
+                                      <li>Lead Inquiry Form</li>
+                                      <li>Social Media Integrations</li>
+                                      <li>
+                                        4 Logo Design Concepts By 3 Experienced
+                                      </li>
                                     </ul>
                                   </div>
                                   <div class="price-link">
@@ -247,7 +235,11 @@ const index = () => {
                                     <a
                                       onClick={(e) => {
                                         localStorage.removeItem("downloadLogo");
-                                        handler(e, "148", "Basic 2 in 1");
+                                        handler(
+                                          e,
+                                          "399",
+                                          "Custom Website With Professional Logo"
+                                        );
                                       }}
                                       data-detail="USD-100-Item Name-Category"
                                       class="theme-btn pay-now-btn"

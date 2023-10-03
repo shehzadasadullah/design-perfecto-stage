@@ -53,7 +53,7 @@ const index = () => {
         const updatedFontStyles = [...fontStyles, selectedFontStyle];
         setFontStyles(updatedFontStyles);
         localStorage.setItem("fontStyle", JSON.stringify(updatedFontStyles));
-        router.push("/gen-logo-animation");
+        router.push("/logos");
       }
     }
   };

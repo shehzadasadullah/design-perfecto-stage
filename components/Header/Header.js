@@ -132,11 +132,14 @@ import Router from "next/router";
 
 const Header = () => {
   const router = useRouter();
+  const disableContextMenu = (event) => {
+    event.preventDefault();
+  };
   return (
     // <!-- Header -->
     <>
-     
       <nav
+        onContextMenu={disableContextMenu}
         className="navbar navbar-expand-lg navbar-dark zIndex"
         style={{
           paddingTop: "8px !important",
@@ -362,6 +365,7 @@ const Header = () => {
         </div>
       </nav>
       <nav
+        onContextMenu={disableContextMenu}
         className=" navbar-dark zIndex"
         style={{
           paddingTop: "8px !important",
@@ -375,8 +379,9 @@ const Header = () => {
             <div class="col-lg-12">
               <div class="about-content text-center pt-2">
                 <p>
-                  <i style={{fontSize:20}}>
-                  First Time User? Get 20% Off On Your First Order Using Promo <b>DESIGN20</b>
+                  <i style={{ fontSize: 20 }}>
+                    First Time User? Get 20% Off On Your First Order Using Promo{" "}
+                    <b>DESIGN20</b>
                   </i>
                 </p>
               </div>

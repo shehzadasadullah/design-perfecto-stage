@@ -7,11 +7,13 @@ import "react-toastify/dist/ReactToastify.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "next/head";
 import JSZip from "jszip";
-import { ClipLoader } from "react-spinners";
 import LogoImages from "../../components/LogoImages/LogoImages";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import img from "./images/image.png";
+import loaderGIF from "../../assets/img/loader-gif.gif";
+import ProgressBar from "react-bootstrap/ProgressBar";
+import PulseLoader from "react-spinners/PulseLoader";
 
 const index = () => {
   const router = useRouter();
@@ -19,6 +21,7 @@ const index = () => {
   const [imageSrcs, setImageSrcs] = useState([]);
   const [imgInfo, setImgInfo] = useState();
   const [show, setShow] = useState(false);
+  const [progress, setProgress] = useState(0);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -71,7 +74,29 @@ const index = () => {
           throw new Error("Network response was not ok");
         }
 
-        const blob = await response.blob();
+        const contentLength = parseInt(
+          response.headers.get("Content-Length"),
+          10
+        );
+        const reader = response.body.getReader();
+
+        let receivedLength = 0;
+        let chunks = [];
+
+        while (true) {
+          const { done, value } = await reader.read();
+
+          if (done) {
+            break;
+          }
+
+          chunks.push(value);
+          receivedLength += value.length;
+          const percentage = Math.round((receivedLength / contentLength) * 100);
+          setProgress(percentage);
+        }
+
+        const blob = new Blob(chunks);
 
         // Load the zip file using JSZip
         const zip = new JSZip();
@@ -104,14 +129,6 @@ const index = () => {
   };
 
   const handleDownload = async (imageDataUrl, filename) => {
-    // const blob = await fetch(imageDataUrl).then((response) => response.blob());
-    // const blobUrl = window.URL.createObjectURL(blob);
-
-    // const link = document.createElement("a");
-    // link.href = imageDataUrl;
-    // link.download = filename;
-    // link.click();
-
     localStorage.setItem("href", imageDataUrl);
     localStorage.setItem("filename", filename);
   };
@@ -129,7 +146,7 @@ const index = () => {
     if (imageSrcs.length > 0) {
       setTimeout(() => {
         handleShow();
-      }, 20000);
+      }, 30000);
     }
   }, [imageSrcs]);
 
@@ -215,28 +232,6 @@ const index = () => {
                               selectedLogo ? selectedLogo : imageSrcs[0].src
                             }
                           />
-
-                          {/* <div
-                            style={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                            }}
-                          >
-                            <button
-                              className="btn btn-primary bg-white text-dark"
-                              onClick={() =>
-                                handleDownload(
-                                  selectedLogo
-                                    ? selectedLogo
-                                    : imageSrcs[0].src,
-                                  imgInfo ? imgInfo : imageSrcs[0].filename
-                                )
-                              }
-                            >
-                              Download
-                            </button>
-                          </div> */}
                         </>
                       )}
                     </div>
@@ -248,7 +243,7 @@ const index = () => {
         </>
       ) : (
         <>
-          <div id="wrapper" class="wrapper">
+          <div onContextMenu={disableContextMenu} id="wrapper" class="wrapper">
             <div
               class="step-wrapper bg-white step-3"
               style={{
@@ -266,13 +261,42 @@ const index = () => {
               >
                 <div
                   style={{
-                    marginTop: "20%",
+                    height: "100%",
+                    width: "100%",
                     display: "flex",
                     justifyContent: "center",
                     alignItems: "center",
+                    background: "#000",
+                    flexDirection: "column",
                   }}
                 >
-                  <ClipLoader size={50} color="#36d7b7" />
+                  <img
+                    src={loaderGIF.src}
+                    alt="Image"
+                    style={{ height: "300pt" }}
+                  />
+                  {progress === 0 ? (
+                    <PulseLoader size={30} color="#E8A055" />
+                  ) : (
+                    <>
+                      <h1
+                        style={{ color: "#E8A055" }}
+                        class="heading heading-h3"
+                      >
+                        {Math.round(progress)}%
+                      </h1>
+                      <div style={{ width: "40%" }}>
+                        <ProgressBar
+                          style={{ height: "20pt" }}
+                          variant="warning"
+                          className="text-dark"
+                          animated
+                          now={progress}
+                          // label={`${Math.round(progress)}%`}
+                        />
+                      </div>
+                    </>
+                  )}
                 </div>
               </div>
             </div>
@@ -281,6 +305,7 @@ const index = () => {
       )}
 
       <Modal
+        onContextMenu={disableContextMenu}
         show={show}
         onHide={handleClose}
         backdrop="static"
@@ -339,7 +364,7 @@ const index = () => {
         </Modal.Footer>
       </Modal>
 
-      <Footer />
+      <Footer onContextMenu={disableContextMenu} />
     </>
   );
 };
