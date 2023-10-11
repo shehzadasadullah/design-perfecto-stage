@@ -14,7 +14,7 @@ const Header = () => {
     <>
       <nav
         onContextMenu={disableContextMenu}
-        className="navbar navbar-expand-xxl navbar-dark zIndex pt-3 pb-3 pe-3"
+        className="navbar navbar-expand-xxl navbar-dark zIndex p-3"
         style={{
           // paddingTop: "8px !important",
           // paddingBottom: "8px !important",
@@ -22,14 +22,16 @@ const Header = () => {
           zIndex: "9999 !important",
         }}
       >
-        <div class="header-left flex-20">
+        <div class="text-left flex-20">
           <div
             class="logo"
-            style={{
-              maxWidth: "150px",
-              marginLeft: "60px",
-              marginRight: "50px",
-            }}
+            style={
+              {
+                // maxWidth: "150px",
+                // marginLeft: "60px",
+                // marginRight: "50px",
+              }
+            }
           >
             {" "}
             <a
@@ -44,6 +46,7 @@ const Header = () => {
                 src={DesignPerfecto.src}
                 alt="Images"
                 loading="lazy"
+                style={{ height: "50pt" }}
               />
             </a>{" "}
           </div>
@@ -61,8 +64,11 @@ const Header = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="header-flex-right flex-80" style={{ marginLeft: "40px" }}>
+        <div
+          class="collapse navbar-collapse mt-3 mt-xxl-0"
+          id="navbarSupportedContent"
+        >
+          <div class="header-flex-right flex-80 ms-5">
             <div class="">
               <ul class="mainmenu navbar-nav">
                 <li
