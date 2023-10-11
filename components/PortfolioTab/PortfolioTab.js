@@ -8,6 +8,7 @@ import Img6 from "../../assets/img/HTML6.jpg";
 import Img7 from "../../assets/img/HTML7.png";
 import Img8 from "../../assets/img/web-development.png";
 import { StarFill } from "react-bootstrap-icons";
+import { SiTrustpilot } from "react-icons/si";
 
 // import Postfolio Images
 import Image1 from "../../assets/img/portfolio/portfolio/1.jpg";
@@ -853,18 +854,32 @@ const PortfolioTab = () => {
           <div class="col-md-12">
             <div class="testimonial-carousel" style={{ marginBottom: "60px" }}>
               <div class="testimonial-stars">
-                <StarFill style={{ fontSize: "24px", color: "#faa709" }} />
-                <StarFill style={{ fontSize: "24px", color: "#faa709" }} />
-                <StarFill style={{ fontSize: "24px", color: "#faa709" }} />
-                <StarFill style={{ fontSize: "24px", color: "#faa709" }} />
-                <StarFill style={{ fontSize: "24px", color: "#faa709" }} />
+                <StarFill style={{ fontSize: "24px", color: "#fff" }} />
+                <StarFill style={{ fontSize: "24px", color: "#fff" }} />
+                <StarFill style={{ fontSize: "24px", color: "#fff" }} />
+                <StarFill style={{ fontSize: "24px", color: "#fff" }} />
+                <StarFill style={{ fontSize: "24px", color: "#fff" }} />
               </div>
-              <p>
-                <i>
-                  Folks think we're rad. We're rated 4.8/5 from 100+ customer
-                  reviews.
-                </i>
-              </p>
+              <div class="view-portfolio-about">
+                <a
+                  target="_blank"
+                  href="https://www.trustpilot.com/review/designperfecto.com"
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                    }}
+                  >
+                    <span>See Our Reviews On TrustPilot</span>
+                    <SiTrustpilot size={20} className="ms-2" color="#04DA8D" />
+                  </div>
+                </a>
+                {/* <a class="cta" href="javascript:void(Tawk_API.toggle())">
+                    Discuss Now
+                  </a>{" "} */}
+              </div>
             </div>
             {/* <div class="view-portfolio-about">
               {" "}
