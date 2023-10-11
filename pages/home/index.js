@@ -98,7 +98,7 @@ const index = () => {
         <HeroSection />
         <Portfolio />
         <Services />
-        <Pricing />
+        {/* <Pricing /> */}
         <Workflow />
         <Card />
         <Footer />

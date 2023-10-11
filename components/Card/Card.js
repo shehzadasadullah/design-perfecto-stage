@@ -1,100 +1,10 @@
-{
-  /* <div class="p-4 text-gray-800 rounded-lg shadow-md">
-<div class="mb-2">
-  <p class="mb-2 text-center text-gray-600 text-white">
-    " Lorem ipsum dolor, sit amet consectetur adipisicing
-    elit. Similique sapiente iusto esse."
-  </p>
-  <div class="flex flex-row items-center justify-center">
-    <div class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full">
-      <img
-        src="https://cdn.pixabay.com/photo/2017/05/19/12/38/entrepreneur-2326419__340.jpg"
-        alt="img"
-        class="object-cover object-center w-full h-full"
-      />
-    </div>
-    <div
-      style={{
-        display: "flex",
-        margin: 4,
-        padding: 4,
-        flexDirection: "column",
-      }}
-    >
-      <div style={{ display: "flex" }}>
-        <img
-          src="https://tevispropane.com/wp-content/uploads/2016/11/Review-star.png"
-          alt="img"
-          width="15"
-        />
-        <img
-          src="https://tevispropane.com/wp-content/uploads/2016/11/Review-star.png"
-          alt="img"
-          width="15"
-        />
-        <img
-          src="https://tevispropane.com/wp-content/uploads/2016/11/Review-star.png"
-          alt="img"
-          width="15"
-        />
-        <img
-          src="https://tevispropane.com/wp-content/uploads/2016/11/Review-star.png"
-          alt="img"
-          width="15"
-        />
-        <img
-          src="https://tevispropane.com/wp-content/uploads/2016/11/Review-star.png"
-          alt="img"
-          width="15"
-        />
-      </div>
-
-      <h5 style={{ color: "white" }}>John Doe</h5>
-      <p class="text-sm text-white">CEO / Founder</p>
-    </div>
-  </div>
-</div>
-</div> */
-}
-
-// import * as React from "react";
-// import { Card as MuiCard } from "@mui/material";
-// import CardContent from "@mui/material/CardContent";
-// import CardMedia from "@mui/material/CardMedia";
-// import Typography from "@mui/material/Typography";
-// import { CardActionArea } from "@mui/material";
-
-// export default function Card({ data }) {
-//   console.log(data?.imgPath?.src);
-//   return (
-//     <MuiCard sx={{ maxWidth: 345 }}>
-//       <CardActionArea disableRipple>
-//         <CardMedia
-//           component="img"
-//           height="140"
-//           image={data?.imgPath?.src}
-//           alt="green iguana"
-//         />
-//         <CardContent>
-//           <Typography component="div" sx={{ fontSize: "18px" }}>
-//             {data.heading}
-//           </Typography>
-//           <Typography component="div">{data.paragraph}</Typography>
-//           <Typography color="text.secondary" sx={{ fontSize: "17px" }}>
-//             {data.created}
-//           </Typography>
-//         </CardContent>
-//       </CardActionArea>
-//     </MuiCard>
-//   );
-// }
-
-import React from "react";
+import React, { Suspense } from "react";
 import Redcar from "../../assets/img/redcar.jpg";
 import Insta from "../../assets/img/insta-post.jpg";
 import BrandImg from "../../assets/img/brand-img.jpg";
 import VideoBlog from "../../assets/img/video-blog-post.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { SiTrustpilot } from "react-icons/si";
 
 // Import Swiper styles
 import "swiper/css";
@@ -104,22 +14,48 @@ import "swiper/css/pagination";
 import { Grid, Pagination } from "swiper";
 const Card = () => {
   return (
-    <div class="bk-blog-grid-area pb--60 rslide" id="blog">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="brook-section-title mb--45 text-center">
-              <h2 class="heading-title text-white">Reviews</h2>
-              <h1 class="heading heading-h3 text-white">4.5</h1>
-              <h6 class="heading heading-h6 text-white letter-spacing-1">
+    <>
+      <Suspense fallback={<div>Loading...</div>}>
+        <div class="bk-blog-grid-area pb--60 rslide" id="blog">
+          <div class="container">
+            <div class="row justify-content-center align-items-center text-center">
+              <div class="col-lg-12">
+                <div class="brook-section-title text-center">
+                  <h2 class="heading-title text-white">Reviews</h2>
+                  <div class="view-portfolio-about">
+                    <a
+                      target="_blank"
+                      href="https://www.trustpilot.com/review/designperfecto.com"
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <span>See Our Reviews On TrustPilot</span>
+                        <SiTrustpilot
+                          size={20}
+                          className="ms-2"
+                          color="#04DA8D"
+                        />
+                      </div>
+                    </a>
+                    {/* <a class="cta" href="javascript:void(Tawk_API.toggle())">
+                    Discuss Now
+                  </a>{" "} */}
+                  </div>
+                  {/* <h1 class="heading heading-h3 text-white">4.5</h1> */}
+                  {/* <h6 class="heading heading-h6 text-white letter-spacing-1">
                 Services Reviews
                 <br />
-              </h6>
+              </h6> */}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
 
-        <Swiper
+            {/* <Swiper
           // install Swiper modules
           breakpoints={{
             576: {
@@ -482,9 +418,9 @@ const Card = () => {
               </div>
             </div>
           </SwiperSlide>
-        </Swiper>
+        </Swiper> */}
 
-        {/* <div class="row">
+            {/* <div class="row">
 <div class="col-lg-3 col-sm-6 col-12 move-up wow mt--10">
 <div class="blog-grid-minimal minimal-style-2 text-white">
 <div class="post-content">
@@ -595,8 +531,10 @@ creative content to their clients regularly.&#8230;
 </div>
 </div>
 </div> */}
-      </div>
-    </div>
+          </div>
+        </div>
+      </Suspense>
+    </>
   );
 };
 

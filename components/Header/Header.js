@@ -140,11 +140,11 @@ const Header = () => {
     <>
       <nav
         onContextMenu={disableContextMenu}
-        className="navbar navbar-expand-lg navbar-dark zIndex"
+        className="navbar navbar-expand-lg navbar-dark zIndex p-3"
         style={{
-          paddingTop: "8px !important",
-          paddingBottom: "8px !important",
-          backgroundColor: "#343a40",
+          // paddingTop: "8px !important",
+          // paddingBottom: "8px !important",
+          backgroundColor: "#1F2327",
           zIndex: "9999 !important",
         }}
       >
@@ -356,7 +356,7 @@ const Header = () => {
                   <a class="contact-num-header nav-link">
                     {/* <i class="fa fa-phone flip-mr-5"></i>{" "} */}
                     <BsFillTelephoneFill color="#999da0" />
-                    <span class="link-styling">307-225-2715</span>
+                    <span class="link-styling">307-212-6611</span>
                   </a>
                 </li>
               </ul>
@@ -364,7 +364,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <nav
+      {/* <nav
         onContextMenu={disableContextMenu}
         className=" navbar-dark zIndex"
         style={{
@@ -388,7 +388,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </>
   );
 };

@@ -9,6 +9,7 @@ import delivery from "../../assets/img/icons/Delivery.png";
 const Workflow = () => {
   return (
     <div
+      style={{ marginTop: "5%" }}
       class="brook-portfolio-area pb--60 slider"
       // data-background="#fea300"
       // style={{ backgroundColor: "#fea300" }}

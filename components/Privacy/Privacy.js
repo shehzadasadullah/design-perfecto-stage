@@ -87,7 +87,7 @@ const privacy = () => {
                       information about our Privacy Policy, do not hesitate to
                       contact us through email at{" "}
                       <a
-                        style={{ color: "white" }}
+                        style={{ color: "white", fontWeight: "bold" }}
                         href="mailto:Info@designperfecto.com"
                       >
                         Info@designperfecto.com

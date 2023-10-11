@@ -86,7 +86,7 @@ const Footer = () => {
                   <a
                     onClick={(e) => {
                       e.preventDefault();
-                      router.push("/privacy-policy");
+                      router.push("/terms-and-condition");
                     }}
                   >
                     Terms And Conditions
@@ -242,9 +242,9 @@ const Footer = () => {
                   />
                   <a
                     style={{ display: "block", marginLeft: "6px" }}
-                    href="tel:03072252715"
+                    href="tel:03072126611"
                   >
-                    307-225-2715
+                    307-212-6611
                   </a>
                 </li>
                 {/* <!-- <li class="contact-text"><i class="fas fa-phone icon" style="transform: scaleX(-1);"></i> <a
